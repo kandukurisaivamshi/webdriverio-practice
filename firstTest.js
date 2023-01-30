@@ -21,6 +21,19 @@ await browser.url("https://rahulshettyacademy.com/loginpagePractise")
    await console.log(await $(".alert-danger").getText())
 }
 )
+it('loginpage',async()=>
+{
+await browser.url("https://rahulshettyacademy.com/loginpagePractise")
+   console.log(await browser.getTitle())
+   //css selector,xpath
+   await $("input[name='username']").setvalue("rahulshettyacademy")
+   await  $("#username").setValue("rahulshettyacadmey")
+   const password=$("//input[@type='password']")
+   await password.setvalue("learning")
+   await $(".btn-primary").waitForExist()
+   await expect(broswer).toHaveUrlContaining("shop")
+}
+ )
 
 
 
