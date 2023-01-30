@@ -23,10 +23,6 @@ it('UI controls',async()=>
  await  $("#okayBtn").click()
  await $$(".customradio")[0].$("span").click()
 
-
- 
-
-
 })
 
 
