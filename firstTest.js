@@ -4,7 +4,7 @@ it('loginpage',async()=>
 {
 await browser.url("https://rahulshettyacademy.com/loginpagePractise")
    console.log(await browser.getTitle())
-   //css selector,xpath
+   
    await $("input[name='username']").setvalue("rahulshettyacademy")
    await  $("#username").setValue("rahulshettyacadmey")
    const password=$("//input[@type='password']")
